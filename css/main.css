@@ -265,3 +265,59 @@ html, body {
     margin-bottom: 10px;
     margin-right: 20px;
 }
+
+@media (max-width: 1100px) {
+    .hours {
+        font-size: 90px;
+    }
+
+    .city-name {
+        font-size: 30px;
+    }
+
+    .temperature {
+        font-size: 60px;
+    }
+
+    .arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+    }
+
+    .weather-extra {
+        font-size: 16px;
+        padding-left: 12px;
+    }
+
+    .layout {
+        flex-direction: row;
+    }
+
+    .left {
+        width: 40%;      /* Avant 27%, trop serré */
+        padding: 10px;
+    }
+
+    .right {
+        padding: 10px;
+    }
+
+    .map-wrapper {
+        margin: 10px;
+        border-width: 2px;
+    }
+
+    .graph-wrapper {
+        height: 120px;
+        padding-top: 10px;
+    }
+
+    #temp-graph {
+        height: 120px;
+    }
+
+    .message {
+        font-size: 16px;
+    }
+}
