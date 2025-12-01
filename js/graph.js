@@ -90,8 +90,8 @@ function drawTempGraph(canvas, points) {
     window.innerWidth <= 1100 && window.innerHeight <= 700;
 
     
-  const tempFontSize  = smallScreen ? 14 : 20;
-  const emojiFontSize = smallScreen ? 14 : 18;
+  const tempFontSize  = smallScreen ? 16 : 20;
+  const emojiFontSize = smallScreen ? 16 : 18;
   const hourFontSize  = smallScreen ? 12 : 20;
 
   ctx.clearRect(0, 0, width, height);
