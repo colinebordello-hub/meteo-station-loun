@@ -85,6 +85,14 @@ function drawTempGraph(canvas, points) {
 
   const width = cssWidth;
   const height = cssHeight;
+  
+  const smallScreen =
+    window.innerWidth <= 1100 && window.innerHeight <= 700;
+
+    
+  const tempFontSize  = smallScreen ? 14 : 20;
+  const emojiFontSize = smallScreen ? 14 : 18;
+  const hourFontSize  = smallScreen ? 12 : 20;
 
   ctx.clearRect(0, 0, width, height);
 
@@ -168,14 +176,14 @@ function drawTempGraph(canvas, points) {
     if (i % 2 === 0) {
         const emoji = getWeatherEmojiForCode(points[i].code);
         ctx.fillStyle = accent;
-        ctx.font = "18px " + bodyFont;
+        ctx.font = `${emojiFontSize}px` + bodyFont;
         ctx.textBaseline = "bottom";
         ctx.fillText(emoji, x, y - 30);
     }
 
     // température (à chaque point)
     ctx.fillStyle = accentTemp;
-    ctx.font = "20px " + bodyFont;
+    ctx.font = `${tempFontSize}px` + bodyFont;
     ctx.textBaseline = "bottom";
     ctx.fillText(tempLabel, x, y - 4);
 
@@ -188,7 +196,7 @@ function drawTempGraph(canvas, points) {
 
   // Labels heures (toutes les 3)
   ctx.fillStyle = accent;
-  ctx.font = "20px " + bodyFont;
+  ctx.font = `${hourFontSize}px` + bodyFont;
   ctx.textAlign = "center";
   ctx.textBaseline = "top";
 

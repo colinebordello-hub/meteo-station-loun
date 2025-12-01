@@ -216,11 +216,18 @@ html, body {
 }
 
 .animation {
-    display: flex;
-    justify-content: center;
-    height: 500px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.animation img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+  display: block;
+}
 .map-wrapper {
     flex: 1;
     min-height: 300px;
@@ -289,7 +296,7 @@ html, body {
   /* Heure + ville + température */
   .hours {
     font-size: 80px;      /* avant 150px */
-    text-align: left;
+    text-align: center;
   }
 
   .cities {

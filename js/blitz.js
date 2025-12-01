@@ -3,7 +3,7 @@ window.Meteo = window.Meteo || {};
 Meteo.updateBlitzMap = function (region = "france") {
   const iframe = document.getElementById("blitzortung-frame");
 
-  let hash = "#5/46.6/2.5"; // France par défaut
+  let hash = "#4.5/46.6/2.5"; // France par défaut
   if (region === "europe") hash = "#4/52/10";
   if (region === "world") hash = "#2/20/0";
 
