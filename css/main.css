@@ -197,7 +197,7 @@ html, body {
     align-items: center;
     justify-content: center;
     gap: 24px;
-    margin-top: 40px;
+    padding-top: 40px;
     border-top: var(--accent-color) 3px solid;
 }
 
@@ -314,7 +314,7 @@ html, body {
   }
 
   .temp-row {
-    margin-top: 20px;
+    padding-top: 20px;
   }
 
   .temperature {
