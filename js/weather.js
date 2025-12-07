@@ -24,7 +24,7 @@ Meteo.updateAnimation = function (code) {
   else if (category === "rain") img.src = localisation + Meteo.animationName + "/rain.gif";
   else if (category === "snow") img.src = localisation + Meteo.animationName + "/snow.gif";
   else if (category === "storm") img.src = localisation + Meteo.animationName + "/storm.gif";
-  else img.src = "assets/images/radis/radis-cloud.png";
+  else img.src = "assets/images/radis/cloud.gif";
 
   anim.appendChild(img);
 };
