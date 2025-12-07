@@ -181,11 +181,14 @@ function drawTempGraph(canvas, points) {
         ctx.fillText(emoji, x, y - 30);
     }
 
+    
+    if (i % 2 === 0) {
     // température (à chaque point)
     ctx.fillStyle = accentTemp;
     ctx.font = `${tempFontSize}px` + bodyFont;
     ctx.textBaseline = "bottom";
     ctx.fillText(tempLabel, x, y - 4);
+    }
 
     // le point (à chaque point)
     ctx.fillStyle = accent;
