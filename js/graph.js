@@ -237,7 +237,7 @@ function getWeatherEmojiForCode(code) {
     case "cloud":
       return "☁️";
     case "fog":
-      return "🌫️";
+      return "💨";
     case "rain":
       return "🌧️";
     case "snow":
