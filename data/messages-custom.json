@@ -1,15 +1,16 @@
 {
     "sun": [
         "Le radis profite du soleil",
-        "Belle journée lumineuse"
+        "Belle journée lumineuse",
+        "un temps à faire des bulles ^^"
     ],
     "rain": [
-        "Le radis met son imperméable ",
-        "Petites gouttes poétiques..."
+        "Le radis met son imperméable",
+        "un peu de pluie ça fait du bien"
     ],
     "snow": [
         "un radis de neige",
-        "Ambiance cocooning sous les flocons"
+        "Il neige dehors"
     ],
     "storm": [
         "Le radis regarde les éclairs depuis le balcon",
@@ -21,18 +22,20 @@
     ],
     "fog": [
         "Le radis se perd dans le brouillard",
-        "Mystère et douceur matinale"
+        "Mystère et boule d'amour"
     ],
     "night": [
-        "Le radis veille va faire dodo",
+        "Ton sourire éclaire la nuit",
         "Bonne nuit ma princesse <3"
     ],
     "morning": [
         "Le radis se réveille",
-        "Bonjour amour!"
+        "Bonjour amour!",
+        "Bonne journée à toi ma tendre"
     ],
     "other": [
         "Je t'aime de tout mon coeur et de toute mon âme",
-        "Je pense fort à toi mon amour <3"
+        "Je pense fort à toi mon amour <3",
+        "Tu me manque enormément ma tendre princesse"
     ]
 }
