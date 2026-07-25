@@ -1,18 +1,22 @@
 window.Meteo = window.Meteo || {};
 
 window.Meteo.cities = [
+  { name: "Andelot-en-Montagne", lat: 46.8567, lon: 5.9319, enabled: true },
   { name: "Argenteuil", lat: 48.9472, lon: 2.2467, enabled: true },
+  { name: "Arpajon", lat: 48.5885, lon: 2.2469, enabled: true },
   { name: "Bordeaux",   lat: 44.8378, lon: -0.5792, enabled: true },
   { name: "Clermont-Ferrand", lat: 45.7772, lon: 3.0870, enabled: true },
   { name: "Dijon",      lat: 47.3220, lon: 5.0415, enabled: true },
   { name: "Grenoble",   lat: 45.1885, lon: 5.7245, enabled: true },
   { name: "Lille",      lat: 50.6292, lon: 3.0573, enabled: true },
+  { name: "Londres", lat: 51.5074, lon: -0.1278, enabled: true },
   { name: "Lyon",       lat: 45.7640, lon: 4.8357, enabled: true },
   { name: "Marseille",  lat: 43.2965, lon: 5.3698, enabled: true },
   { name: "Metz",       lat: 49.1193, lon: 6.1757, enabled: true },
   { name: "Montpellier",lat: 43.6108, lon: 3.8767, enabled: true },
   { name: "Nancy", lat: 48.6921, lon: 6.1844, enabled: true },
   { name: "Nantes",     lat: 47.2184, lon: -1.5536, enabled: true },
+  { name: "New York", lat: 40.7128, lon: -74.0060, enabled: true },
   { name: "Nice",       lat: 43.7102, lon: 7.2620, enabled: true },
   { name: "Orléans",    lat: 47.9029, lon: 1.9093, enabled: true },
   { name: "Paris",      lat: 48.8566, lon: 2.3522, enabled: true },
@@ -22,7 +26,8 @@ window.Meteo.cities = [
   { name: "Strasbourg", lat: 48.5734, lon: 7.7521, enabled: true },
   { name: "Toulouse",   lat: 43.6045, lon: 1.4442, enabled: true },
   { name: "Tours",      lat: 47.3941, lon: 0.6848, enabled: true },
-  { name: "Saint-Étienne", lat: 45.4397, lon: 4.3872, enabled: true }
+  { name: "Saint-Étienne", lat: 45.4397, lon: 4.3872, enabled: true },
+  { name: "Valence", lat: 44.9334, lon: 4.8924, enabled: true },
 ];
 
 window.Meteo.updateActiveCities = function () {
