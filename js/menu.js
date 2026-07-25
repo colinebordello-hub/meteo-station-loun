@@ -190,3 +190,24 @@ window.Meteo.initMenu = function () {
     });
   }
 };
+ // map
+
+ document.addEventListener('DOMContentLoaded', () => {
+    const mapRadios = document.querySelectorAll('input[name="map-choice"]');
+    const blitzFrame = document.getElementById('blitzortung-frame');
+    const adsbFrame = document.getElementById('adsb-frame');
+
+    mapRadios.forEach(radio => {
+        radio.addEventListener('change', (e) => {
+            const selectedMap = e.target.value;
+
+            if (selectedMap === 'adsb') {
+                blitzFrame.style.display = 'none';
+                adsbFrame.style.display = 'block';
+            } else {
+                adsbFrame.style.display = 'none';
+                blitzFrame.style.display = 'block';
+            }
+        });
+    });
+});
