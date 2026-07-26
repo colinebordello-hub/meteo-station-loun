@@ -196,6 +196,9 @@ window.Meteo.initMenu = function () {
     const mapRadios = document.querySelectorAll('input[name="map-choice"]');
     const blitzFrame = document.getElementById('blitzortung-frame');
     const adsbFrame = document.getElementById('adsb-frame');
+    const windyFrame = document.getElementById('windy-frame');
+    adsbFrame.style.display = 'none';
+    windyFrame.style.display = 'none';
 
     mapRadios.forEach(radio => {
         radio.addEventListener('change', (e) => {
@@ -203,7 +206,12 @@ window.Meteo.initMenu = function () {
 
             if (selectedMap === 'adsb') {
                 blitzFrame.style.display = 'none';
+                windyFrame.style.display = 'none';
                 adsbFrame.style.display = 'block';
+            } else if (selectedMap === 'windy') {
+                blitzFrame.style.display = 'none';
+                adsbFrame.style.display = 'none';
+                windyFrame.style.display = 'block';
             } else {
                 adsbFrame.style.display = 'none';
                 blitzFrame.style.display = 'block';

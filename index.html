@@ -26,6 +26,10 @@
                     <label>
                         <input type="radio" name="map-choice" value="adsb"> Vol (ADSB.fi)
                     </label>
+                    
+                    <label>
+                        <input type="radio" name="map-choice" value="windy"> Vent (Windy)
+                    </label>
                 </div>
             </div>
 
@@ -100,6 +104,14 @@
 
       <main id="right" class="right">
         <div class="map-wrapper">
+            
+            <iframe
+                id="windy-frame"
+                width="100%"
+                height="100%"
+                src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=km/h&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=46.104&lon=1.89&message=true"
+                frameborder="0">
+            </iframe>
             <iframe
                 id="blitzortung-frame"
                 src="https://map.blitzortung.org/index.php?
