@@ -214,6 +214,7 @@ window.Meteo.initMenu = function () {
                 windyFrame.style.display = 'block';
             } else {
                 adsbFrame.style.display = 'none';
+                windyFrame.style.display = 'none';
                 blitzFrame.style.display = 'block';
             }
         });
